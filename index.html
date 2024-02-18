@@ -22,11 +22,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/styles.css" />
   </head>
-  <body class="max-w-[80%] mx-auto">
+  <body>
     <!-- Header area -->
-    <header>
+    <header class="lg:max-w-[1170px] mx-auto px-3 lg:px-0">
       <!-- navbar -->
-      <div class="navbar bg-base-100 px-0 py-10">
+      <div class="navbar bg-base-100 py-4 lg:py-10">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -57,57 +57,213 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class=" text-xl">SPY-Ticket</a>
+          <a class="font-raleway text-xl lg:text-2xl font-extrabold">SPY-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a>Home</a></li>
-            <li>
-              <a>About</a>
-            </li>
+            <li><a>About</a></li>
             <li><a>Destination</a></li>
             <li><a>Search</a></li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Bus <i class="fa-solid fa-van-shuttle"></i></a>
-          
+          <a class="flex gap-x-2 px-5 lg:px-8 py-2 lg:py-5 lg:text-xl font-bold border rounded-xl border-[#1DD100] bg-green-100 text-[#1DD100] ">Bus <img src="images/bus-icon.png" alt=""></a>
         </div>
       </div>
       <!-- banner -->
-      <div
-        class="hero min-h-[550px] rounded-2xl"
-        style="background-image: url(images/banner.png)"
-      >
-        <div class="hero-overlay bg-opacity-30 rounded-3xl"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-2xl">
-            <h1 class="mb-5 text-5xl font-bold text-white leading-relaxed">
-              End-to-End Travel with <br />
-              <span class="text-[#1DD100]">SPY Paribahan</span>
-            </h1>
-            <p class="mb-5">
-              Yes, you can run unit tests and view the results directly within
-              the app. <br />
-              The integrated testing features allow for a streamlined .
-            </p>
-            <button class="btn btn-primary">Buy Tickets</button>
+      <div class="lg:max-w-[1170px] mx-auto px-3 lg:px-0">
+        <div
+          class="hero lg:min-h-dvh rounded-2xl"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="bg-opacity-30 rounded-3xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div>
+              <h1
+                class="text-2xl lg:text-7xl font-extrabold text-white font-raleway"
+              >
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100] leading-normal lg:leading-loose"
+                  >SPY Paribahan</span
+                >
+              </h1>
+              <p class="text-base lg:text-lg ">
+                Yes, you can run unit tests and view the results directly within
+                the app. <br />
+                The integrated testing features allow for a streamlined.
+              </p>
+              <div class="text-center pt-10 text-black">
+                <button
+                  class="px-5 lg:px-8 py-2 lg:py-5 lg:text-xl font-bold border rounded-xl border-[#1DD100] bg-[#1DD100]"
+                >
+                  Buy Tickets
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!-- bannerBadge -->
-      <div class="flex">
-        <div>
-          <img src="images/people.png" alt="">
+      <div
+        class="w-4/5 mx-auto hidden lg:flex justify-between -translate-y-1/2"
+      >
+        <!-- single-1 -->
+        <div
+          class="flex space-x-5 px-10 py-8 bg-white rounded-3xl border-b-[3px] border-b-[#1DD100]"
+        >
+          <div>
+            <img src="images/people.png" alt="" />
+          </div>
+          <div>
+            <h2 class="text-4xl font-extrabold leading-10">500K+</h2>
+            <p>Registered users</p>
+          </div>
         </div>
-        <div>
-          <h2>500K+</h2>
-          <p>Registered users</p>
+        <!-- single-2 -->
+        <div
+          class="flex space-x-5 px-10 py-8 bg-white rounded-3xl border-b-[3px] border-b-[#1DD100]"
+        >
+          <div>
+            <img src="images/ticket-cupon.png" alt="" />
+          </div>
+          <div>
+            <h2 class="text-4xl font-extrabold leading-10">1.7 lacks+</h2>
+            <p>Tickets sold</p>
+          </div>
+        </div>
+        <!-- single-3 -->
+        <div
+          class="flex space-x-5 px-10 py-8 bg-white rounded-3xl border-b-[3px] border-b-[#1DD100]"
+        >
+          <div>
+            <img src="images/stoppage.png" alt="" />
+          </div>
+          <div>
+            <h2 class="text-4xl font-extrabold leading-10">80K+</h2>
+            <p>Rental partners</p>
+          </div>
         </div>
       </div>
     </header>
     <!-- Main area -->
-    <main></main>
+    <main>
+      <!-- Offer section -->
+      <section
+        class="mt-5 lg:mt-12 mb-10 lg:mb-24 lg:max-w-[1170px] mx-auto px-3 lg:px-0"
+      >
+        <h2 class="text-xl lg:text-4xl font-bold leading-10 text-center">
+          Best offers for you
+        </h2>
+        <div class="flex flex-col lg:flex-row gap-6 mt-12">
+          <!-- Coupon code--1 -->
+          <div class="flex flex-1 bg-[#FFBF0F] rounded-3xl px-5 lg:px-12">
+            <div class="flex flex-col justify-center w-3/5">
+              <h2 class="text-xl lg:text-4xl font-black text-[#030712CC]">
+                15% OFF
+              </h2>
+              <h4 class="text-lg lg:text-xl font-semibold text-[#030712CC]">
+                on your next purchase
+              </h4>
+              <p class="text-base lg:text-lg font-medium text-[#03071280]">
+                use by January 2024
+              </p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div
+              class="text-center flex flex-col items-center justify-center flex-auto"
+            >
+              <h2 class="text-lg lg:text-3xl font-medium text-[#030712CC]">
+                NEW15
+              </h2>
+              <p class="text-base lg:text-xl font-medium text-[#03071280]">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+          <!-- Coupon code--2 -->
+          <div class="flex flex-1 bg-[#F78C9C] rounded-3xl px-5 lg:px-12">
+            <div class="flex flex-col justify-center w-3/5">
+              <h2 class="text-xl lg:text-4xl font-black text-[#030712CC]">
+                20% OFF
+              </h2>
+              <h4 class="text-lg lg:text-xl font-semibold text-[#030712CC]">
+                on your next purchase
+              </h4>
+              <p class="text-lg font-medium text-[#03071280]">
+                use by January 2024
+              </p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div
+              class="text-center flex flex-col items-center justify-center flex-auto"
+            >
+              <h2 class="text-lg lg:text-3xl font-medium text-[#030712CC]">
+                Couple 20
+              </h2>
+              <p class="text-base lg:text-xl font-medium text-[#03071280]">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="text-center pt-8 lg:pt-16">
+          <button
+            class="px-5 lg:px-8 py-2 lg:py-5 lg:text-xl font-bold border rounded-xl border-[#1DD100] text-[#1DD100]"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- Ticket section -->
+      <section
+        class="px-3 lg:px-28 py-6 lg:py-24 bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-3xl"
+      >
+        <div class="lg:max-w-[1170px] mx-auto px-3 lg:px-0">
+          <div class="text-center">
+            <h2 class="text-xl lg:text-4xl font-bold leading-10">
+              S.P.Y Paribahan
+            </h2>
+            <p class="py-3 lg:py-6 text-sm lg:text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+              nemo optio voluptatibus voluptatem sequi <br />
+              necessitatibus consectetur eligendi at quidem perspiciatis.
+            </p>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex space-x-4">
+              <div>
+                <img src="images/bus-logo.svg" alt="">
+              </div>
+              <div>
+                <h2>Spyline Paribahan</h2>
+                <p>Coach-009-WEB ! AC_Business</p>
+              </div>
+            </div>
+            <div class="p-2 lg:p-4 flex items-center justify-center space-x-2 bg-green-100 rounded-xl text-[#1DD100]">
+                <img src="images/seat-green.png" alt="">
+                <p class="text-sm lg:text-xl">40 Seats left</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-transparent divide-y-2 divide-dashed space-y-5 p-8 rounded-lg">
+          <div class="flex justify-between">
+              <h4>Route</h4>
+              <h3>Dhaka - Sylhet</h3>
+          </div>
+          <div class="flex justify-between">
+              <h4>Departure Time</h4>
+              <h3>9:00 PM</h3>
+          </div>
+          <div class="flex justify-between">
+            <span class="bg-[#F7F8F8]">Boarding Point - Laxmipur</span>
+            <span>Dropping Point - Bogura</span>
+            <span>Est. Time - 11 Hour</span>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer area -->
     <footer></footer>
     <!-- JS -->
