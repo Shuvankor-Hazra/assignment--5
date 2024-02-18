@@ -57,7 +57,9 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="font-raleway text-xl lg:text-2xl font-extrabold">SPY-Ticket</a>
+          <a class="font-raleway text-xl lg:text-2xl font-extrabold"
+            >SPY-Ticket</a
+          >
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -68,7 +70,10 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="flex gap-x-2 px-5 lg:px-8 py-2 lg:py-5 lg:text-xl font-bold border rounded-xl border-[#1DD100] bg-green-100 text-[#1DD100] ">Bus <img src="images/bus-icon.png" alt=""></a>
+          <a
+            class="flex gap-x-2 px-5 lg:px-8 py-2 lg:py-5 lg:text-xl font-bold border rounded-xl border-[#1DD100] bg-green-100 text-[#1DD100]"
+            >Bus <img src="images/bus-icon.png" alt=""
+          /></a>
         </div>
       </div>
       <!-- banner -->
@@ -88,7 +93,7 @@
                   >SPY Paribahan</span
                 >
               </h1>
-              <p class="text-base lg:text-lg ">
+              <p class="text-base lg:text-lg">
                 Yes, you can run unit tests and view the results directly within
                 the app. <br />
                 The integrated testing features allow for a streamlined.
@@ -218,48 +223,70 @@
       </section>
       <!-- Ticket section -->
       <section
-        class="px-3 lg:px-28 py-6 lg:py-24 bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-3xl"
+        class="px-0 lg:px-28 py-6 lg:py-24 bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-3xl"
       >
         <div class="lg:max-w-[1170px] mx-auto px-3 lg:px-0">
           <div class="text-center">
             <h2 class="text-xl lg:text-4xl font-bold leading-10">
               S.P.Y Paribahan
             </h2>
-            <p class="py-3 lg:py-6 text-sm lg:text-lg">
+            <p class="pt-3 lg:pt-6 pb-3 lg:pb-12 text-sm lg:text-lg">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
               nemo optio voluptatibus voluptatem sequi <br />
               necessitatibus consectetur eligendi at quidem perspiciatis.
             </p>
           </div>
-          <div class="flex justify-between">
-            <div class="flex space-x-4">
-              <div>
-                <img src="images/bus-logo.svg" alt="">
+          <div class="py-5 lg:py-0 px-0 lg:px-8 flex flex-col lg:flex-row items-center justify-between bg-white rounded-3xl">
+            <div class="w-full lg:w-3/4">
+              <div class="flex items-center justify-center lg:justify-between">
+                <div class="flex flex-col lg:flex-row lg:space-x-4">
+                  <div>
+                    <img src="images/bus-logo.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2
+                      class="text-lg lg:text-3xl font-bold leading-9 font-raleway"
+                    >
+                      Spyline Paribahan
+                    </h2>
+                    <p class="text-base lg:text-lg font-family">
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="p-2 lg:p-4 flex items-center justify-center space-x-2 bg-green-100 rounded-xl text-[#1DD100]"
+                >
+                  <img src="images/seat-green.png" alt="" />
+                  <p class="text-sm lg:text-xl">40 Seats left</p>
+                </button>
               </div>
-              <div>
-                <h2>Spyline Paribahan</h2>
-                <p>Coach-009-WEB ! AC_Business</p>
+              <div
+                class="bg-[#F7F8F8] p-8 my-6 rounded-lg"
+              >
+                <div class="flex justify-between border-b-2 border-dashed py-5">
+                  <h4>Route</h4>
+                  <h3>Dhaka - Sylhet</h3>
+                </div>
+                <div class="flex justify-between border-b-2 border-dashed py-5">
+                  <h4>Departure Time</h4>
+                  <h3>9:00 PM</h3>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between pt-5 text-center gap-5">
+                  <span class="bg-[#0307120D] p-4 rounded-xl">Boarding Point - Laxmipur</span>
+                  <span class="bg-[#0307120D] p-4 rounded-xl">Dropping Point - Bogura</span>
+                  <span class="bg-[#0307120D] p-4 rounded-xl">Est. Time - 11 Hour</span>
+                </div>
               </div>
             </div>
-            <div class="p-2 lg:p-4 flex items-center justify-center space-x-2 bg-green-100 rounded-xl text-[#1DD100]">
-                <img src="images/seat-green.png" alt="">
-                <p class="text-sm lg:text-xl">40 Seats left</p>
+            <img class="hidden lg:flex" src="images/info-devider.png" alt="" />
+            <div
+              class="space-y-4 flex flex-col items-center justify-center font-raleway"
+            >
+              <img src="images/fare.png" alt="" />
+              <h2 class="text-3xl font-bold">550 Taka</h2>
+              <p class="text-2xl font-semibold">Per Seat</p>
             </div>
-          </div>
-        </div>
-        <div class="bg-transparent divide-y-2 divide-dashed space-y-5 p-8 rounded-lg">
-          <div class="flex justify-between">
-              <h4>Route</h4>
-              <h3>Dhaka - Sylhet</h3>
-          </div>
-          <div class="flex justify-between">
-              <h4>Departure Time</h4>
-              <h3>9:00 PM</h3>
-          </div>
-          <div class="flex justify-between">
-            <span class="bg-[#F7F8F8]">Boarding Point - Laxmipur</span>
-            <span>Dropping Point - Bogura</span>
-            <span>Est. Time - 11 Hour</span>
           </div>
         </div>
       </section>
