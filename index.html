@@ -22,11 +22,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/styles.css" />
   </head>
+
+
   <body>
     <!-- Header area -->
     <header class="lg:max-w-[1170px] mx-auto px-3 lg:px-0">
       <!-- navbar -->
-      <div class="navbar bg-base-100 py-4 lg:py-10">
+      <div class="navbar bg-base-100 py-4 lg:py-8">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -47,7 +49,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium"
             >
               <li><a>Home</a></li>
               <li>
@@ -62,7 +64,7 @@
           >
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal px-1 text-lg font-medium">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Destination</a></li>
@@ -70,10 +72,8 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a
-            class="flex gap-x-2 px-5 lg:px-8 py-2 lg:py-5 lg:text-xl font-bold border rounded-xl border-[#1DD100] bg-green-100 text-[#1DD100]"
-            >Bus <img src="images/bus-icon.png" alt=""
-          /></a>
+          <button class="bg-green-100 text-[#1DD100] btn btn-sm  lg:btn-md">Bus <img src="images/bus-icon.png" alt=""
+            /></button>
         </div>
       </div>
       <!-- banner -->
@@ -99,11 +99,7 @@
                 The integrated testing features allow for a streamlined.
               </p>
               <div class="text-center pt-10 text-black">
-                <button
-                  class="px-5 lg:px-8 py-2 lg:py-5 lg:text-xl font-bold border rounded-xl border-[#1DD100] bg-[#1DD100]"
-                >
-                  Buy Tickets
-                </button>
+                <button class="bg-[#1DD100] text-black btn btn-sm md:btn-md lg:btn-lg">Buy Tickets</button>
               </div>
             </div>
           </div>
@@ -214,11 +210,12 @@
         </div>
         <!-- Button -->
         <div class="text-center pt-8 lg:pt-16">
-          <button
+          <button class="bg-white border-2 border-[#1DD100] text-[#1DD100] btn btn-sm md:btn-md lg:btn-lg">See All Offers</button>
+          <!-- <button
             class="px-5 lg:px-8 py-2 lg:py-5 lg:text-xl font-bold border rounded-xl border-[#1DD100] text-[#1DD100]"
           >
-            See All Offers
-          </button>
+            
+          </button> -->
         </div>
       </section>
       <!-- Ticket section top -->
@@ -583,7 +580,7 @@
       <!-- Footer Top -->
       <footer class="footer p-10 lg:max-w-[1170px] mx-auto px-3 lg:px-0 justify-between">
         <nav>
-          <h6 class="text-3xl font-semibold">SPY-Ticket</h6>
+          <h6 class="text-3xl font-semibold font-raleway">SPY-Ticket</h6>
           <p>SPY-Ticket is a digital platform to make your daily commuting better.</p>
         </nav>
         <nav>
